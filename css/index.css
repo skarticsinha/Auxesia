@@ -1,3 +1,5 @@
+/* Hero Section Start*/
+
 .hero{
     background-image: url("../static/hero_bg.png");
 }
@@ -47,3 +49,77 @@
     border-radius: 28px;
     padding: 1.5vh 2.5vw;
 }
+
+/* Hero Section End */
+
+/* About Section Starts */
+
+.about{
+    padding: 5% 10em 0 10em;
+    height: 200vh;
+    background-color: #F2FBFE;
+}
+
+.section_name{
+    font-weight: 400;
+    font-size: 100%;
+    color: #5E5E5E;
+    padding-bottom: 1%;
+
+}
+
+.section_heading{
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #279089;
+    padding-bottom: 4%;
+}
+
+/* table{
+    border-color: #C15690;
+    border-style: solid;
+    
+}
+
+table tr{
+    border: darkgoldenrod;
+    border-style: dashed;
+}
+
+table tr td{
+    border: rgb(32, 79, 233);
+    border-style: dashed;
+    
+} */
+
+.full_row td img{
+    height: 100%;
+}
+
+table tr td.elements{
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+p.big_text {
+    font-size: 26px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+p.medium_text{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+table tr td.elements p.medium_text{
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+p.small_text{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* About Section Ends */
