@@ -56,8 +56,9 @@
 
 .about{
     padding: 5% 10em 0 10em;
-    height: 200vh;
+    height: 180vh;
     background-color: #F2FBFE;
+    z-index: 1;
 }
 
 .section_name{
@@ -92,19 +93,24 @@ table tr td{
     
 } */
 
+.about table{
+    position: relative;
+    z-index: 1;
+}
+
 .full_row td img{
     height: 100%;
 }
 
 table tr td.elements{
     padding-top: 40px;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 p.big_text {
     font-size: 26px;
     font-weight: 300;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 p.medium_text{
@@ -120,6 +126,30 @@ table tr td.elements p.medium_text{
 p.small_text{
     font-size: 16px;
     font-weight: 300;
+}
+
+.about .container{
+    position: relative;
+    background: white;
+    padding: 2em;
+    width: 30%;
+    margin-left: -20px;
+    margin-top: -200px;
+    z-index: 2;
+    box-shadow: 10px 10px 20px 0px rgba(201, 201, 201, 0.50);
+}
+
+.about .container .medium_text{
+    color: #90278E;
+}
+
+.about .container .small_text{
+    font-size: 14px;
+}
+
+.about .link{
+    padding-top: 10px;
+    float: right;
 }
 
 /* About Section Ends */
