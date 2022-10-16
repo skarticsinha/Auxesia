@@ -52,7 +52,7 @@
 
 /* Hero Section End */
 
-/* About Section Starts */
+/* About Section Start */
 
 .about{
     padding: 5% 10em 0 10em;
@@ -152,4 +152,73 @@ p.small_text{
     float: right;
 }
 
-/* About Section Ends */
+/* About Section End */
+
+/* Why Section Start */
+
+.why{
+    height: 100vh;
+    position: relative;
+    background: url(../static/index/why/learning-science.png) center / Cover;
+    background-color: rgba(39, 144, 137,0.25);
+    display: flex;
+    /* display: inline-block; */
+}
+
+.why .left{
+    position: sticky;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(0%, 30%);
+    width: 35%;
+    padding-left: 10%;
+}
+
+.why .left p.medium_text{
+    color: white;
+} 
+
+.why .left p.big_text{
+    color: white;
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+} 
+
+.why .left p.small_text{
+    color: white;
+} 
+
+.why .right{
+    width: 65%;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+.why .right .count{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.why .right .count hr{
+    border-width: 1px;
+    border-color: gray;
+    height: 2px;
+    color: gray;
+}
+
+
+
+
+/* Why Section End */
+
+/* Products Section Start */
+
+.products{
+    padding: 25px 50px 25px 50px;
+}
+
+/* Product Section End  */
