@@ -40,7 +40,7 @@
     color: #5E5E5E;
 }
 
-.hero .content button.primary{
+button.primary{
     margin-top: 5%;
     background-color: #C15690;
     color: white;
@@ -275,6 +275,67 @@ p.small_text{
 
 /* Product Section End  */
 
+/* Careers Section Start */
+
+.careers{
+    padding: 5% 15em 5% 15em;
+    background-color: #F0FEFF;
+}
+
+.careers .section_name{
+    color: #279089;
+    font-size: 20px;
+    margin-top: -10vh;
+}
+
+.careers button.primary{
+    margin-top: 10vh;
+    cursor: pointer;
+}
+
+.careers .job td.data{
+    padding-left: 2%;
+    /* padding-right: 5em; */
+    width: 50%;
+}
+
+.careers .job td.data p.small_text{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.careers .job td.data .section_heading{
+    font-size: 40px;
+}
+
+.careers .job td.img img{
+    /* width: 25vw; */
+    height: 50vh;
+    /* margin-left: 10vw; */
+}
+
+.careers .container{
+    position: relative;
+    background: white;
+    padding: 2em;
+    width: 60%;
+    margin-left: 15vw;
+    margin-top: -16vh;
+    z-index: 2;
+    box-shadow: 10px 10px 20px 0px rgba(201, 201, 201, 0.50);
+}
+
+.careers .container .medium_text{
+    color: #90278E;
+    padding-bottom: 10px;
+}
+
+.careers .container .small_text{
+    font-size: 14px;
+}
+
+/* Careers Section End */
+
 /* Contact Section Start */
 
 .contact{
@@ -283,6 +344,7 @@ p.small_text{
     justify-content: start;
     background: url(../static/index/Contact/pharmacist-helping-woman-medicine-choice.png) center / cover;
     color: white;
+    width: 100%;
     
 }
 
