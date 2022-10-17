@@ -275,6 +275,92 @@ p.small_text{
 
 /* Product Section End  */
 
+/* Contact Section Start */
+
+.contact{
+
+    display: flex;
+    justify-content: start;
+    background: url(../static/index/Contact/pharmacist-helping-woman-medicine-choice.png) center / cover;
+    color: white;
+    
+}
+
+.contact .overlay{
+    background: rgba(78, 24, 77, 0.4);
+    padding: 5% 15em 5% 15em;
+}
+
+.contact .table table .feild{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    height: 40px;
+    font-weight: 300;
+    background-color: #F2F2F2;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.contact .table table .feild2{
+    width: 49%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    padding-right: 3%;
+    height: 40px;
+    font-weight: 300;
+    background-color: #F2F2F2;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.contact .table table .feild3{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+    /* height: 40px; */
+    font-weight: 300;
+    background-color: #F2F2F2;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+/* .contact .form{
+    width: 50%;
+    margin: 0;
+}
+.contact .info{
+    width: 50%;
+    margin-left: 50%;
+    transform: translatey(-100%);
+} */
+
+.contact .overlay .table .big_text{
+    padding: 0;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.contact .overlay .table .pad .big_text,
+.contact .overlay .table .pad .small_text{
+    padding-left: 50px;
+}
+
+.form_btn{
+    margin-top: 5%;
+    background-color: #90278E;
+    color: white;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 28px;
+    padding: 1.7vh 3vw;
+    cursor: pointer;
+}
+
+/* Contact Section End */
+
 /* Footer start */
 
 footer{
