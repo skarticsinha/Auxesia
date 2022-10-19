@@ -43,7 +43,7 @@ header{
     float: right;
 } */
 
-#header_upper .contact p{
+#header_upper .contact_data p{
     display: inline-block;
     text-align: center;
     transform: translateY(-75%);
