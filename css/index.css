@@ -247,7 +247,7 @@ p.small_text{
 /* Products Section Start */
 
 .products{
-    padding: 5% 10em 5% 10em;
+    padding: 5% 8em 5% 8em;
     background-color: #F2FBFE;
 }
 
@@ -293,12 +293,21 @@ p.small_text{
     background-color: #3E4C69;
 }
 
+/* .cards .card3 img{
+    height: 50%;
+} */
+
+.products .cards img{
+    padding-right: 0;
+    width: 12vw;
+}
+
 .banner{
     margin-top: 1%;
 }
 
-.banner img{
-    width: 77.5vw;
+.products .banner img{
+    width: 80vw;
 }
 
 
