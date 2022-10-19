@@ -318,6 +318,62 @@ p.small_text{
 
 /* Partners Section End0 */
 
+/* Hope section Start */
+
+.hope{
+    background: url(../static/index/Hope/daily-pills-health-treatment-with-copy-space.png) center / cover;
+    height: 45vh;
+    padding: 1% 10em 0 10em;
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+    color: white;
+}
+
+.hope .space{
+    width: 90vw;
+}
+
+.hope .left{
+    padding-left: 30vw;
+}
+
+.hope .left .big_text{
+    padding: 0;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    justify-content: flex-end;
+    justify-items: left;
+}
+
+.hope .left .small_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hope .right .big_text{
+    padding: 0;
+    font-size: 45px;
+    font-weight: 600;
+    color: #EBFFF9;
+}
+
+.hope .right .medium_text{
+    color: #005D38;
+}
+
+.hope .right .small_text{
+    color: #000000;
+}
+
+.hope .right .small_text{
+    width: 40vw;
+}
+
+/* Hope section End */
+
 /* /Covid Section Start */
 
 .covid{
@@ -353,6 +409,7 @@ p.small_text{
     width: 25vw;
     display: flex;
     align-items: center;
+    border-radius: 5px;
     box-shadow: 10px 8px 15px 0px rgba(201, 201, 201, 0.40);
 }
 
