@@ -304,6 +304,20 @@ p.small_text{
 
 /* Product Section End  */
 
+/* Partners Section Start */
+
+.partners{
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 5vw 4vh;
+}
+
+.partners img{
+    width: 12vw;
+}
+
+/* Partners Section End0 */
+
 /* /Covid Section Start */
 
 .covid{
