@@ -414,8 +414,10 @@ p.small_text{
 }
 
 .covid .cards .card img{
-    width: 10%;
+    width: 14%;
+    height: 7vh;
     margin: 0 10px;
+    border-radius: 2px;
 }
 
 /* /Covid Section End */
