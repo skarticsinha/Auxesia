@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- hero slider start -->
+
+    <!-- <link rel="stylesheet" href="./css/my-slider.css"/>
+    <script src="./js/ism-2.2.min.js"></script> -->
+
+    <!-- hero slider end -->
     <title>Auxesia - Life Sciences Pvt. Ltd.</title>
 </head>
+
 <body>
     <header>
         <div id="header_upper">
@@ -17,11 +27,11 @@
             <span class="contact_data">
                 <span>
                     <img src="/static/identity/call_btn.svg" alt="Call Auxesia">
-                    <p><A href="tel:(123)-0200-12345">(123)-0200-12345</A></p>
+                    <p><a href="tel:(123)-0200-12345">(123)-0200-12345</a></p>
                 </span>
                 <span>
                     <img src="/static/identity/mail_btn.svg" alt="Call Auxesia">
-                    <p><A href="mailto:mailus@auxesialifesciences.com">mailus@auxesialifesciences.com</A></p>
+                    <p><a href="mailto:mailus@auxesialifesciences.com">mailus@auxesialifesciences.com</a></p>
                 </span>
             </span>
         </div>
@@ -39,10 +49,10 @@
                 <span class="social">
                     <ul>
                         <li>
-                            <li><a href="www.facebook.com/"><img src="/static/identity/facebook.svg" alt=""></a></li>
-                            <li><a href="www.instagram.com/"><img src="/static/identity/instagram.svg" alt=""></a></li>
-                            <li><a href="www.linkedin.com/"><img src="/static/identity/linkedin.svg" alt=""></a></li>
-                            <li><a href="www.twitter.com/"><img src="/static/identity/twitter.svg" alt=""></a></li>
+                        <li><a href="www.facebook.com/"><img src="/static/identity/facebook.svg" alt=""></a></li>
+                        <li><a href="www.instagram.com/"><img src="/static/identity/instagram.svg" alt=""></a></li>
+                        <li><a href="www.linkedin.com/"><img src="/static/identity/linkedin.svg" alt=""></a></li>
+                        <li><a href="www.twitter.com/"><img src="/static/identity/twitter.svg" alt=""></a></li>
                         </li>
                     </ul>
                 </span>
@@ -50,12 +60,102 @@
         </div>
     </header>
     <div class="hero">
-        <div class="content">
-            <h2>We keep Our Promisses</h2>
-            <h1>it’s an extension of trust</h1>
-            <p>Our mission is to build a healthier tomorrow for patients<br>with progressive medicines</p>
-            <button class="primary">Explore Products</button>
+        <div class="overlay">
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <h2>We keep Our Promisses</h2>
+                                <h1>it’s an extension of trust</h1>
+                                <p>Our mission is to build a healthier tomorrow for patients<br>with progressive medicines
+                                </p>
+                                <button class="primary">
+                                    Explore Products
+                                </button>
+                            </div>
+                            <div class="image">
+                                <img
+                                src="./static/index/hero/female-psychologist-consulting-patient-desk-hospital.png"
+                                alt="female-psychologist-consulting-patient-desk-hospital">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <h2>Continually Harnessing</h2>
+                                <h1>Our Medical Expertise</h1>
+                                <p>Our mission is to build a healthier tomorrow for patients<br>with progressive medicines
+                                </p>
+                                <button class="primary">
+                                    Explore Products
+                                </button>
+                            </div>
+                            <div class="image">
+                                <img
+                                src="./static/index/hero/doctor-man-consulting-patient-while-filling-up-application-form-desk-hospital.png"
+                                alt="doctor-man-consulting-patient-while-filling-up-application-form-desk-hospital">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <h2>We will Help You</h2>
+                                <h1>To Live Healthy Life</h1>
+                                <p>Our mission is to build a healthier tomorrow for patients<br>with progressive medicines
+                                </p>
+                                <button class="primary">
+                                    Explore Products
+                                </button>
+                            </div>
+                            <div class="image">
+                                <img
+                                src="./static/index/hero/young-female-turkish-pharmacist-with-medical-mask-standing-front-counter-pharmacy_edited.png"
+                                alt="fyoung-female-turkish-pharmacist-with-medical-mask-standing-front-counter-pharmacy_edited">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    loop: true,
+        
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                });
+            </script>
         </div>
+        
+
+        <!-- <div class="overlay">
+
+            <div class="ism-slider" data-play_type="loop" data-radios="false" id="my-slider">
+                <ol>
+                    <li>
+                        <img src="./static/index/hero/female-psychologist-consulting-patient-desk-hospital.png">
+                        <div class="ism-caption ism-caption-0">My slide caption text</div>
+                    </li>
+                    <li>
+                        <img src="./static/index/hero/doctor-man-consulting-patient-while-filling-up-application-form-desk-hospital.png">
+                        <div class="ism-caption ism-caption-0">My slide caption text</div>
+                    </li>
+                    <li>
+                        <img src="./static/index/hero/young-female-turkish-pharmacist-with-medical-mask-standing-front-counter-pharmacy_edited.png">
+                        <div class="ism-caption ism-caption-0">My slide caption text</div>
+                    </li>
+                </ol>
+            </div>
+        </div> -->
     </div>
     <div class="about">
         <p class="section_name">About us</p>
@@ -65,13 +165,15 @@
         <table>
             <tr class="full_row">
                 <td rowspan="5">
-                    <img src="./static/index/about/medicine-doctor-holding-color-capsule-pill-hand-with-icon-medical-network-connection-medical-technology-network-concept.png" alt="medicine-doctor-holding-color-capsule-pill-hand-with-icon-medical-network-connection-medical-technology-network-concept">
+                    <img src="./static/index/about/medicine-doctor-holding-color-capsule-pill-hand-with-icon-medical-network-connection-medical-technology-network-concept.png"
+                        alt="medicine-doctor-holding-color-capsule-pill-hand-with-icon-medical-network-connection-medical-technology-network-concept">
                 </td>
             </tr>
             <tr>
                 <td class="full_coloum" colspan="2">
                     <p class="big_text">
-                        Quality through exemplary dedication, care, and commitment. We envision growth. We envision care. We envision excellence at every step. We are Auxesia 
+                        Quality through exemplary dedication, care, and commitment. We envision growth. We envision
+                        care. We envision excellence at every step. We are Auxesia
                     </p>
                 </td>
             </tr>
@@ -79,36 +181,44 @@
                 <td class="elements">
                     <img src="./static/index/about/icon1.png" alt="">
                     <p class="medium_text">Auxesia General Medicine</p>
-                    <p class="small_text">We manufacture a wide variety of General medications such as Antihypertensives, Antidiabetic, Antiseptics, Analgesics, Antibiotics, and Antipyretics.</p>
+                    <p class="small_text">We manufacture a wide variety of General medications such as
+                        Antihypertensives, Antidiabetic, Antiseptics, Analgesics, Antibiotics, and Antipyretics.</p>
                 </td>
                 <td class="elements">
                     <img src="./static/index/about/icon2.png" alt="">
                     <p class="medium_text">Auxesia Orthopedic</p>
-                    <p class="small_text">We manufacture top-of-the-line orthotics and orthopedic supports that are result-oriented and offer maximum care and comfort. </p>
+                    <p class="small_text">We manufacture top-of-the-line orthotics and orthopedic supports that are
+                        result-oriented and offer maximum care and comfort. </p>
                 </td>
             </tr>
             <tr>
                 <td class="elements">
                     <img src="./static/index/about/icon3.png" alt="">
                     <p class="medium_text">Auxesia General Medicine</p>
-                    <p class="small_text">We manufacture a wide variety of General medications such as Antihypertensives, Antidiabetic, Antiseptics, Analgesics, Antibiotics, and Antipyretics.</p>
+                    <p class="small_text">We manufacture a wide variety of General medications such as
+                        Antihypertensives, Antidiabetic, Antiseptics, Analgesics, Antibiotics, and Antipyretics.</p>
                 </td>
                 <td class="elements">
                     <img src="./static/index/about/icon4.png" alt="">
                     <p class="medium_text">Auxesia Orthopedic</p>
-                    <p class="small_text">We manufacture top-of-the-line orthotics and orthopedic supports that are result-oriented and offer maximum care and comfort. </p>
+                    <p class="small_text">We manufacture top-of-the-line orthotics and orthopedic supports that are
+                        result-oriented and offer maximum care and comfort. </p>
                 </td>
             </tr>
             <tr>
                 <td class="elements">
                     <img src="./static/index/about/icon5.png" alt="">
                     <p class="medium_text">Pharmacy</p>
-                    <p class="small_text">Hope Medicals, our pharmacy and retail outlet, boasts great service, proper management, and staff with certification and excellent know-how, meaning our customers are in the best hands. </p>
+                    <p class="small_text">Hope Medicals, our pharmacy and retail outlet, boasts great service, proper
+                        management, and staff with certification and excellent know-how, meaning our customers are in
+                        the best hands. </p>
                 </td>
                 <td class="elements">
                     <img src="./static/index/about/icon6.png" alt="">
                     <p class="medium_text">Exports</p>
-                    <p class="small_text">Auxesia Life Sciences Pvt. Ltd has also expanded to various countries with impressive results. Our brands are retailed in South East Asian countries like the Philippines, Maldives, Sri Lanka, etc. </p>
+                    <p class="small_text">Auxesia Life Sciences Pvt. Ltd has also expanded to various countries with
+                        impressive results. Our brands are retailed in South East Asian countries like the Philippines,
+                        Maldives, Sri Lanka, etc. </p>
                 </td>
             </tr>
         </table>
@@ -120,7 +230,9 @@
                 Trusted By Leading Companies
             </p>
             <p class="small_text">
-                Auxesia Life Sciences Pvt. Ltd. is a new medicine manufacturer and distributor based out of Kochi, Kerala. The company is owned and run by veterans and well-experienced people from the Pharmaceutical industry.
+                Auxesia Life Sciences Pvt. Ltd. is a new medicine manufacturer and distributor based out of Kochi,
+                Kerala. The company is owned and run by veterans and well-experienced people from the Pharmaceutical
+                industry.
             </p>
         </div>
     </div>
@@ -204,7 +316,7 @@
             </div>
         </div>
     </div> -->
-    
+
     <div class="products">
         <div class="intro">
             <p class="section_name">Our Range of Products</p>
@@ -228,7 +340,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit, veritatis sapiente iure perferendis?</p>
+                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
+                                veritatis sapiente iure perferendis?</p>
                         </td>
                     </tr>
                 </table>
@@ -247,7 +360,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit, veritatis sapiente iure perferendis?</p>
+                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
+                                veritatis sapiente iure perferendis?</p>
                         </td>
                     </tr>
                 </table>
@@ -266,7 +380,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit, veritatis sapiente iure perferendis?</p>
+                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
+                                veritatis sapiente iure perferendis?</p>
                         </td>
                     </tr>
                 </table>
@@ -311,7 +426,8 @@
                     on Medical Products
                 </p>
                 <p class="small_text">
-                    Hope Medicals, our pharmacy and retail outlet, boasts great service, proper management, and staff with certification and excellent know-how, meaning our customers are in the best hands.
+                    Hope Medicals, our pharmacy and retail outlet, boasts great service, proper management, and staff
+                    with certification and excellent know-how, meaning our customers are in the best hands.
                 </p>
             </div>
         </div>
@@ -326,9 +442,12 @@
                 COVID-19
             </p>
             <p class="small_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur commodi doloribus similique quasi laudantium rem cumque ratione aut quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur commodi doloribus similique quasi
+                laudantium rem cumque ratione aut quisquam.
                 <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, assumenda reprehenderit, iusto quis minus incidunt dolor libero repellendus officiis sint molestias! Tenetur iusto eveniet commodi omnis voluptate hic corporis velit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, assumenda reprehenderit, iusto quis
+                minus incidunt dolor libero repellendus officiis sint molestias! Tenetur iusto eveniet commodi omnis
+                voluptate hic corporis velit.
             </p>
         </div>
         <div class="cards">
@@ -368,10 +487,11 @@
                 <td class="data">
                     <p class="section_name">Careers</p>
                     <h2 class="section_heading">
-                        Find the right <br>opportunity for you.. 
+                        Find the right <br>opportunity for you..
                     </h2>
                     <p class="small text">
-                        We are committed to an inclusive and diverse workplace where everyone can be themselves and excel professionally and personally.
+                        We are committed to an inclusive and diverse workplace where everyone can be themselves and
+                        excel professionally and personally.
                     </p>
                     <button class="primary">Upload Resume</button>
                 </td>
@@ -382,14 +502,15 @@
                             Let's Grow Together
                         </p>
                         <p class="small_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in ducimus veniam reiciendis esse excepturi.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in ducimus veniam reiciendis
+                            esse excepturi.
                         </p>
                     </div>
                 </td>
-            </td>
+                </td>
         </table>
     </div>
-    
+
     <!-- <div class="contact">
         <div class="overlay">
             <div class="form">
@@ -413,7 +534,7 @@
             </div>
         </div>
     </div> -->
-    
+
     <div class="contact">
         <div class="overlay">
             <div class="table">
@@ -422,18 +543,18 @@
                     <tr>
                         <td width="50%">
                             <!-- <form action=""> -->
-                                <input type="text" class="feild" placeholder="Name*">
-                                <input type="text" class="feild" placeholder="Company">
-                                <input type="email" class="feild" placeholder="Email*">
-                                <input type="tel" class="feild2" placeholder="Phone*">
-                                <select name="Select Enquiry Type*" class="feild2">
-                                    <option value="Choice 1">Choice 1</option>
-                                    <option value="Choice 2">Choice 2</option>
-                                    <option value="Choice 3">Choice 3</option>
-                                    <option value="Choice 4">Choice 4</option>
-                                </select>
-                                <textarea placeholder="Message" cols="30" rows="10" class="feild3"></textarea>
-                                <button class="form_btn" action="">Submit</button>
+                            <input type="text" class="feild" placeholder="Name*">
+                            <input type="text" class="feild" placeholder="Company">
+                            <input type="email" class="feild" placeholder="Email*">
+                            <input type="tel" class="feild2" placeholder="Phone*">
+                            <select name="Select Enquiry Type*" class="feild2">
+                                <option value="Choice 1">Choice 1</option>
+                                <option value="Choice 2">Choice 2</option>
+                                <option value="Choice 3">Choice 3</option>
+                                <option value="Choice 4">Choice 4</option>
+                            </select>
+                            <textarea placeholder="Message" cols="30" rows="10" class="feild3"></textarea>
+                            <button class="form_btn" action="">Submit</button>
                             <!-- </form> -->
                         </td>
                         <td class="pad">
@@ -441,7 +562,9 @@
                                 We assure <br>customer satisfaction <br>with personal care
                             </p>
                             <p class="small_text">
-                                We assure customer satisfaction with personal care. Our executives are here to assist you with your enquiries. Do Email us with your questions and we shall get back to you at the earliest.
+                                We assure customer satisfaction with personal care. Our executives are here to assist
+                                you with your enquiries. Do Email us with your questions and we shall get back to you at
+                                the earliest.
                             </p>
                         </td>
                     </tr>
@@ -481,14 +604,15 @@
             <div class="social">
                 <ul>
                     <li>
-                        <li><a href="www.facebook.com/"><img src="/static/identity/facebook.svg" alt=""></a></li>
-                        <li><a href="www.instagram.com/"><img src="/static/identity/instagram.svg" alt=""></a></li>
-                        <li><a href="www.linkedin.com/"><img src="/static/identity/linkedin.svg" alt=""></a></li>
-                        <li><a href="www.twitter.com/"><img src="/static/identity/twitter.svg" alt=""></a></li>
+                    <li><a href="www.facebook.com/"><img src="/static/identity/facebook.svg" alt=""></a></li>
+                    <li><a href="www.instagram.com/"><img src="/static/identity/instagram.svg" alt=""></a></li>
+                    <li><a href="www.linkedin.com/"><img src="/static/identity/linkedin.svg" alt=""></a></li>
+                    <li><a href="www.twitter.com/"><img src="/static/identity/twitter.svg" alt=""></a></li>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
