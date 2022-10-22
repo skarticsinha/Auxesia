@@ -252,7 +252,8 @@ p.small_text{
 /* Why Section Start */
 
 .why{
-    height: 100vh;
+    height: fit-content;
+    padding: 0 10em 0 2em;
     position: relative;
     background: url(../static/index/why/learning-science.png) center / Cover;
     background-color: rgba(39, 144, 137,0.25);
@@ -289,8 +290,12 @@ p.small_text{
 
 .why .right{
     width: 65%;
-    padding-left: 10%;
+    padding-left: 2%;
     padding-top: 50px;
+}
+
+.why .ritght table.why_data  td.icon{
+    width: min-content;
 }
 
 .why .right .count{
@@ -512,6 +517,15 @@ p.small_text{
 
 .careers button.primary{
     margin-top: 10vh;
+    /* cursor: pointer; */
+    /* margin-top: 3%; */
+    background-color: #C15690;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 28px;
+    padding: 1.5vh 2.5vw;
     cursor: pointer;
 }
 
@@ -645,50 +659,3 @@ p.small_text{
 
 /* Contact Section End */
 
-/* Footer start */
-
-footer{
-    background-color: black;
-}
-
-footer .upper{
-    padding: 5% 10em 0 10em;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .upper .details{
-    color: white;
-    padding-bottom: 3em;
-}
-
-footer .upper .details img{
-    padding-bottom: 2em;
-}
-
-footer .upper .details .p{
-    font-size: 14px;
-    font-weight: 400;
-}
-
-footer .upper .quick ul li{
-    padding-bottom: 30%;
-}
-
-footer .upper .quick ul li a{
-    color: white;
-    font-size: 18px;
-}
-
-footer .lower{
-    padding: 1% 10em 2% 10em;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-footer .lower .p{
-    top: 40%;
-}
-
-/* Footer End */
