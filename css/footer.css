@@ -1,0 +1,47 @@
+/* Footer start */
+
+footer{
+    background-color: black;
+}
+
+footer .upper{
+    padding: 5% 10em 0 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .upper .details{
+    color: white;
+    padding-bottom: 3em;
+}
+
+footer .upper .details img{
+    padding-bottom: 2em;
+}
+
+footer .upper .details .p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .upper .quick ul li{
+    padding-bottom: 30%;
+}
+
+footer .upper .quick ul li a{
+    color: white;
+    font-size: 18px;
+}
+
+footer .lower{
+    padding: 1% 10em 2% 10em;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .lower .p{
+    top: 40%;
+}
+
+/* Footer End */
