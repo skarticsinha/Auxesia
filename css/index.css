@@ -81,10 +81,15 @@ button.primary{
 
 /* Hero Section End */
 
+*{
+    position: relative;
+}
+
 /* Hero Section Starts */
 
 .hero {
     margin: -44vh 0 -1vh 0;
+    position: inherit;
 }
 
 .hero .swiper{
@@ -154,6 +159,7 @@ button.primary{
     height: 180vh;
     background-color: #F2FBFE;
     z-index: 1;
+    position: inherit;
 }
 
 .section_name{
@@ -251,17 +257,26 @@ p.small_text{
 
 /* Why Section Start */
 
-.why{
+.why_back{
+    color: white;
     height: fit-content;
-    padding: 0 10em 0 2em;
-    position: relative;
+    /* padding: 0 0 0 2em; */
+    /* position: relative; */
     background: url(../static/index/why/learning-science.png) center / Cover;
-    background-color: rgba(39, 144, 137,0.25);
     display: flex;
+    height: 100vh;
     /* display: inline-block; */
+    position: fixed;
+    top: 0px;
+    z-index: -1;
 }
 
-.why .left{
+.why_back .wrapper{
+    background-color: rgba(26, 109, 103, 0.5);
+    /* padding: 0 0 0 -2em; */
+}
+
+.why_back .left{
     position: sticky;
     /* top: 50%; */
     /* left: 50%; */
@@ -270,12 +285,53 @@ p.small_text{
     padding-left: 10%;
 }
 
-.why .left p.medium_text{
-    color: white;
+.why_back .left p.big_text{
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
 } 
 
-.why .left p.big_text{
+.why_back .left p.small_text{
     color: white;
+}
+
+.why_back .right{
+    width: 75%;
+    visibility: hidden;
+}
+
+/*  */
+
+.why{
+    color: white;
+    height: fit-content;
+    padding: 0 0 0 2em;
+    position: relative;
+    /* background: url(../static/index/why/learning-science.png) center / Cover; */
+    display: flex;
+    /* display: inline-block; */
+    z-index: 1;
+    background: linear-gradient(rgba(4, 45, 42, 1), rgba(4, 45, 42, 0.1),rgba(4, 45, 42, 0.05),rgba(4, 45, 42, 0), rgba(4, 45, 42, 0.05),rgba(4, 45, 42, 0.1),rgba(4, 45, 42, 1));
+}
+
+/* .why .wrapper{
+    background: linear-gradient(90deg ,rgba(4, 45, 42, 1), rgba(4, 45, 42, 1), rgba(4, 45, 42, 1));
+} */
+
+.why .left{
+    position: sticky;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(0%, 30%);
+    width: 35%;
+    padding-left: 10%;
+    visibility: hidden;
+}
+
+.why .left p.big_text{
     padding: 0;
     padding-top: 2px;
     padding-bottom: 5px;
@@ -291,8 +347,26 @@ p.small_text{
 .why .right{
     width: 65%;
     padding-left: 2%;
+    padding-right: 7vw;
     padding-top: 50px;
+    background: rgba(3, 36, 34, 0.75);
 }
+
+div.why div.right hr{
+    border: none;
+    border-top: 2px solid #fff;
+    /* color: #333; */
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* .why .right hr{
+    color: white;
+    border-color: white;
+} */
 
 .why .ritght table.why_data  td.icon{
     width: min-content;
@@ -300,17 +374,139 @@ p.small_text{
 
 .why .right .count{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 50px;
+    padding-bottom: 20px;
 }
 
-.why .right .count hr{
+/* .why .right .count hr{
     border-width: 1px;
     border-color: gray;
     height: 2px;
     color: gray;
+    margin-bottom: 10px;
+} */
+
+.why .right .big_text{
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.why .right .small_text{
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+/* .why .right div.sec1 table.why_data .main_img img{
+    width: 90%;
+} */
+
+.why .right div.sec1{
+    display: flex;
+    padding-left: 2vw;
+}
+
+.why .right div.sec1 div.ri{
+    width: 80%;
+    height: fit-content;
+    /* padding-left: 5vw; */
+    /* padding-right: 5vw; */
+}
+
+.why .right div.sec1 img.side_img{
+    width: 75%;
+    height: 80%;
+    /* padding-right: 2vw; */
 }
 
 
+
+.why .right div.sec1 .container{
+    position: relative;
+    background: white;
+    padding: 2em;
+    width: 75%;
+    margin-left: -2vw;
+    margin-top: -25vh;
+    z-index: 2;
+    box-shadow: 10px 10px 20px 0px rgba(201, 201, 201, 0.50);
+}
+
+.why .right div.sec1 .container .medium_text{
+    color: #90278E;
+    padding-bottom: 10px;
+}
+
+.why .right div.sec1 .container .small_text{
+    font-size: 14px;
+    color: #3E3E3E;
+    padding: 0;
+}
+
+.why .right div.sec1 table.why_data{
+    margin-left: -80px;
+}
+
+.why .right div.sec1 table.why_data tr td.icon{
+    width: 100px;
+}
+
+.why .right div.sec1 table.why_data tr{
+    height: 80px;
+}
+
+.why .right div.sec1 table.why_data .content{
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.why .right div.sec1 table.why_data .content .data .medium_text{
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.why .right div.sec1 table.why_data .content .data .small_text{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+.why .right .sec2 div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8vw;
+}
+
+/* .why .right .sec2 div.text p.big_text{
+    font-size: 50px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.why .right .sec2 div.content{
+    margin-bottom: 10px;
+} */
+
+.why .right .sec2 img{
+    padding-right: 20px;
+}
+
+.why .right .sec2 table .medium_text{
+    font-size: 50px;
+    font-weight: 600;
+    color: #1FA89F;
+    margin-top: -20px;
+    letter-spacing: 1px;
+    /* padding-bottom: 5px; */
+}
+
+.why .right .sec2 table .small_text{
+    font-size: 16px;
+    color: white;
+    padding-bottom: 0;
+}
 
 
 /* Why Section End */
