@@ -586,6 +586,7 @@ div.why div.right hr{
     display: flex;
     justify-content: space-between;
     padding: 4vh 5vw 4vh;
+    background-color: white;
 }
 
 .partners img{
