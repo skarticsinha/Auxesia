@@ -1,0 +1,94 @@
+section.page_info{
+    background: url(../static/distributors/pharmacist-helping-woman-medicine-choice.png);
+    height: 20vh;
+}
+
+section.page_info .overlay{
+    background: rgba(152, 224, 227, 0.7);
+    height: inherit;
+    display: flex;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.page_info .overlay .page_name h1{
+    font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+section.page_info .overlay .breadcrumms{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.page_info .overlay .breadcrumms p{
+    padding-left: 1vw;
+}
+
+section.page_info .overlay .breadcrumms p.indicator{
+    color: #707070;
+}
+
+section.page_info .overlay .breadcrumms p a{
+    color: #161616;
+}
+
+section.data{
+    padding: 2em 5em 10em 5em;
+    background-color: #F2FBFE;
+    height: fit-content;
+}
+
+section.data p.description{
+    color: #3E3E3E;
+    font-weight: 300;
+    padding: 0 2vw;
+}
+
+section.data .location_name{
+    margin: 4vh 0 6vh 0;
+    background-color: #D4F2F0;
+}
+
+section.data .location_name h2{
+    padding: 3vh 2vw;
+    color: #279089;
+    font-weight: 400;
+}
+
+section.data .distributors{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+section.data .distributors div{
+    padding: 0 1vw;
+}
+
+section.data .name{
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section.data .address{
+    color: #5E5E5E;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.data .address a{
+    color: #5E5E5E;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.data .avalible{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
