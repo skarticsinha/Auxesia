@@ -9,12 +9,14 @@
     /* overflow-x: hidden; */
 }
 
-html{
+html {
     overflow-x: hidden;
+    position: relative;
 }
 
-body{
+body {
     overflow-x: hidden;
+    position: relative;
 }
 
 header.main {
@@ -290,7 +292,9 @@ header.mobile_header .wrapper nav ul li a:hover {
         display: block;
         align-items: center;
         height: min-content;
+        z-index: 5;
         position: sticky;
+        top: 0;
     }
 
     header.mobile_header .wrapper .logo img {
@@ -327,32 +331,32 @@ header.mobile_header .wrapper nav ul li a:hover {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        
+
     }
 
-    header.mobile_header .wrapper .side_menu nav ul{
+    header.mobile_header .wrapper .side_menu nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    header.mobile_header .wrapper .social{
+    header.mobile_header .wrapper .social {
         position: absolute;
         bottom: 1rem;
     }
 
-    .menu_active .wrapper .side_menu{
+    .menu_active .wrapper .side_menu {
         transform: translateX(0) !important;
         opacity: 1 !important;
         visibility: visible !important;
         pointer-events: auto !important;
     }
 
-    .menu_active .mobile_navbar_btn .mobile_nav_icon[name="close-outline"]{
+    .menu_active .mobile_navbar_btn .mobile_nav_icon[name="close-outline"] {
         display: block;
     }
 
-    .menu_active .mobile_navbar_btn .mobile_nav_icon[name="menu-outline"]{
+    .menu_active .mobile_navbar_btn .mobile_nav_icon[name="menu-outline"] {
         display: none;
     }
 
