@@ -1,0 +1,281 @@
+body {
+    background-color: #F2FBFE;
+}
+
+section.page_info {
+    background: url(../static/contacts/doctor-holding-vaccine-icon-his-hand.png) center / cover;
+    height: 20vh;
+}
+
+section.page_info .overlay {
+    background: rgba(152, 224, 227, 0.7);
+    height: inherit;
+    display: flex;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.page_info .overlay .page_name h1 {
+    font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+section.page_info .overlay .breadcrumms {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.page_info .overlay .breadcrumms p {
+    padding-left: 1vw;
+}
+
+section.page_info .overlay .breadcrumms p.indicator {
+    color: #707070;
+}
+
+section.page_info .overlay .breadcrumms p a {
+    color: #161616;
+}
+
+section.map iframe {
+    width: 100vw;
+    height: 20rem;
+}
+
+section.main {
+    height: min-content;
+    padding: 6rem 8rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact .title {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.contact .text {
+    padding: 0.5rem 0;
+}
+
+section.main .contact form .feild {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 40px;
+    font-weight: 300;
+    background-color: #ffffff;
+    border: 1px solid #EBEBEB;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+section.main .contact form .feild2 {
+    width: 100%;
+    margin-top: 10px;
+    padding: 2.5%;
+    height: 10rem;
+    font-weight: 300;
+    background-color: #ffffff;
+    border: 1px solid #EBEBEB;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.contact form .form_btn {
+    margin-top: 5%;
+    background-color: #90278E;
+    color: white;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 28px;
+    padding: 1.7vh 3vw;
+    cursor: pointer;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.office>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.office .name {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.office .address,
+.office .address a {
+    color: #5E5E5E;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.office .avalible {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+/* 960px */
+@media(max-width: 60em) {
+
+    section.main {
+        padding: 6rem 4rem;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    section.main p.title {
+        font-size: 1.8rem;
+    }
+
+    section.main p.text {
+        font-size: calc(100% - 10%);
+    }
+
+    .contact {
+        width: 55%;
+    }
+
+    .contact form .form_btn{
+        padding: 1.7vh 4vw;
+    }
+
+    .office .name {
+        color: black;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .office .address,
+    .office .address a {
+        color: #5E5E5E;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .office .avalible {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+
+
+}
+
+
+
+/* 768px */
+@media(max-width: 48em) {
+
+    section.page_info .overlay {
+        padding: 0 2rem;
+    }
+
+    section.main {
+        padding: 4rem 2rem;
+        gap: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact form .form_btn{
+        padding: 1.7vh 5vw;
+    }
+    
+    .office {
+        width: 90%;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* 512px */
+@media(max-width: 32em) {
+
+    section.page_info {
+        height: 10vh;
+    }
+
+    section.page_info .overlay {
+        padding: 0 1rem;
+    }
+
+    section.page_info .overlay .page_name h1 {
+        font-size: 4vh;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    section.page_info .overlay .breadcrumms p {
+        font-size: calc(100% - 20%);
+    }
+
+    section.main {
+        padding: 2rem 1rem;
+        gap: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact form .form_btn{
+        padding: 1.7vh 6vw;
+    }
+
+    .office {
+        width: 90%;
+    }
+
+
+
+
+
+
+}
