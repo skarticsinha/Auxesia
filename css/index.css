@@ -140,6 +140,11 @@ button.primary{
     border-radius: 28px;
     padding: 1.5vh 2.5vw;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero .slider .swiper-slide .text button.primary:hover{
+    font-size: 110%;
 }
 
 .hero .swiper .swiper-button-prev, .swiper .swiper-button-next{
@@ -152,15 +157,7 @@ button.primary{
 
 /* Hero Section Ends */
 
-/* About Section Start */
-
-.about{
-    padding: 5% 10em 0 10em;
-    height: 180vh;
-    background-color: #F2FBFE;
-    z-index: 1;
-    position: inherit;
-}
+/* ===== Re-usable part ===== */
 
 .section_name{
     font-weight: 400;
@@ -177,41 +174,9 @@ button.primary{
     padding-bottom: 4%;
 }
 
-/* table{
-    border-color: #C15690;
-    border-style: solid;
-    
-}
-
-table tr{
-    border: darkgoldenrod;
-    border-style: dashed;
-}
-
-table tr td{
-    border: rgb(32, 79, 233);
-    border-style: dashed;
-    
-} */
-
-.about table{
-    position: relative;
-    z-index: 1;
-}
-
-.full_row td img{
-    height: 100%;
-}
-
-table tr td.elements{
-    padding-top: 40px;
-    padding-left: 30px;
-}
-
 p.big_text {
     font-size: 26px;
     font-weight: 300;
-    padding-left: 30px;
 }
 
 p.medium_text{
@@ -219,39 +184,109 @@ p.medium_text{
     font-weight: 400;
 }
 
-table tr td.elements p.medium_text{
-    padding-top: 7px;
-    padding-bottom: 10px;
-}
-
 p.small_text{
     font-size: 16px;
     font-weight: 300;
 }
 
-.about .container{
+/* ===== Re-usable part ===== */
+
+/* About Section Start */
+
+.about_us{
+    padding: 5% 10em 5% 10em;
+    height: min-content;
+    background-color: #F2FBFE;
+    z-index: 1;
+    position: inherit;
+}
+
+.about_us > div{
+    display: flex;
+    gap: 4rem;
+    align-items: left;
+}
+
+
+.about_us > div > .left{
+    width: min-content;
+}
+
+.about_us > div > .right{
+    width: fit-content;
+}
+
+.about_us .container{
     position: relative;
     background: white;
     padding: 2em;
-    width: 30%;
+    width: 20rem;
+    /* height: fit-content; */
     margin-left: -20px;
     margin-top: -200px;
     z-index: 2;
     box-shadow: 10px 10px 20px 0px rgba(201, 201, 201, 0.50);
 }
 
-.about .container .medium_text{
+.about_us .container .medium_text{
     color: #90278E;
 }
 
-.about .container .small_text{
+.about_us .container .small_text{
     font-size: 14px;
 }
 
-.about .link{
-    padding-top: 10px;
+.about_us .link{
+    margin-top: -1rem;
     float: right;
 }
+
+.about_us p.medium_text{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0.2rem 0 0.4rem;
+}
+
+
+.about_points{
+    display: flex;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.about_points > div{
+    width: 48%;
+}
+
+
+/* ===== Resoinsive - About__us ===== */
+
+@media(max-width: 32em){
+
+    .about_us{
+        padding: 5% 2em 5% 2em;
+    }
+
+    .about_us > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us > div > .left img{
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .about_us .container{
+        display: none;
+    }
+
+
+}
+
+/* ===== Resoinsive - About__us ===== */
 
 /* About Section End */
 
@@ -856,3 +891,79 @@ div.why div.right hr{
 
 /* Contact Section End */
 
+
+
+
+
+
+/* 768px -- tablets*/
+@media(max-width: 48em){
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* 512px -- mobile*/
+@media(max-width: 32em){
+
+    .hero {
+        margin: -30.5vh 0 -1vh 0;
+        position: inherit;
+    }
+    
+    .hero .slider .swiper-slide .text{
+        position: relative;
+        z-index: 2;
+        top: 32vh;
+        padding: 0 0 0 8vw;
+    }
+    
+    .hero .slider .swiper-slide .text h2{
+        font-size: 0.6rem;
+    }
+    
+    .hero .slider .swiper-slide .text h1{
+        font-size: 1rem;
+    }
+
+    .hero .slider .swiper-slide .text p{
+        font-size: 0.5rem;
+    }
+
+    .hero .slider .swiper-slide .text button.primary{
+        font-size: 0.4rem;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 0.3rem 0.4rem;
+
+    }
+
+    html.hydrated:root {
+        --swiper-navigation-size: 20px;
+    }
+
+    /* .about{
+        padding: 2em 1em 5em 1em;
+    }
+
+    .section_heading{
+        font-size: 1.5rem;
+    } */
+    
+    
+
+
+
+
+
+
+}
