@@ -1,0 +1,263 @@
+section.page_info{
+    background: url(../static/about/learning-science.png) center / cover;
+    height: 20vh;
+}
+
+section.page_info .overlay{
+    background: rgba(152, 224, 227, 0.7);
+    height: inherit;
+    display: flex;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.page_info .overlay .page_name h1{
+    font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+section.page_info .overlay .breadcrumms{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.page_info .overlay .breadcrumms p{
+    padding-left: 1vw;
+}
+
+section.page_info .overlay .breadcrumms p.indicator{
+    color: #707070;
+}
+
+section.page_info .overlay .breadcrumms p a{
+    color: #161616;
+}
+
+/* 512px */
+@media(max-width: 32em) {
+
+    section.page_info {
+        height: 10vh;
+    }
+
+    section.page_info .overlay {
+        padding: 0 1rem;
+    }
+
+    section.page_info .overlay .page_name h1 {
+        font-size: 4vh;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    section.page_info .overlay .breadcrumms p {
+        font-size: calc(100% - 20%);
+    }
+
+}
+
+/* ===== Re-usable part */
+
+p.big_text {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+p.medium_text{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+p.small_text{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* 512px */
+@media(max-width: 32em){
+    p.big_text{
+        font-size: 1.6rem;
+        word-wrap: normal;
+    }
+
+    p.medium_text{
+        font-size: 1.2rem;
+    }
+
+    p.small_text{
+        font-size: 1rem;
+    }
+
+
+}
+
+/* ===== Re-usable part */
+
+.about{
+    padding: 2rem 8rem 4rem 8rem;
+    background-color: #F2FBFE;
+}
+
+.about .help-img{
+    width: 100%;
+    background: url(../static/about/female-psychologist-consulting-patient-desk-hospital.png) center / cover;
+    height: 50vh;
+}
+
+.about .divide{
+    display: flex;
+    padding: 2rem 0;
+    gap: 3rem;
+}
+
+.about .divide .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.about .divide .left p.big_text{
+    color: #279089;
+    letter-spacing: 0.5px;
+}
+
+.about .divide .left p.medium_text{
+    font-weight: 400;
+    color: #3E3E3E;
+}
+
+.about .points{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.about .points .name{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.about .divide .right{
+    background: url(../static/about/young-student-working-with-chemical-solutions-lab.png) center / cover;
+    width: 100%;
+}
+
+
+/* 512px */
+@media(max-width: 32em) {
+
+    .about{
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .about .divide{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .about .divide .left{
+        flex-wrap: wrap;
+    }
+
+    .about .divide .left p.big_text{
+        word-wrap: break-word;
+    }
+
+    .about .points{
+        flex-wrap: wrap;
+    }
+
+}
+
+.genral{
+    padding: 2rem 8rem 4rem 8rem;
+    background-color: #EBF8F2;
+}
+
+.ortho{
+    padding: 2rem 8rem 4rem 8rem;
+    background-color: #F2FBFE;
+}
+
+.dental{
+    padding: 2rem 8rem 4rem 8rem;
+    background-color: #EBF8F2;
+}
+
+.vet{
+    padding: 2rem 8rem 4rem 8rem;
+    background-color: #F2FBFE;
+}
+
+.intro{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.intro img{
+    width: 35vw;
+}
+
+.intro .big_text{
+    color: #279089;
+    letter-spacing: 0.5px;
+}
+
+.featured > div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured p.medium_text{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cards .card{
+    display: flex;
+    width: 32%;
+    min-width: 22rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: white;
+}
+
+.cards .card:first-child{
+    background-color: #FB714C;
+}
+
+.cards .card:nth-child(2){
+    background-color: #079AC6;
+}
+
+.cards .card:nth-child(3){
+    background-color: #3E4C69;
+}
+
+.product_name{
+    font-size: 120%;
+    padding-bottom: 0.5rem;
+}
+
+.details{
+    font-size: 1rem;
+}
+
+.img-gallery .carousel-cell{
+    width: 20%;
+}
+
+.flickity-page-dots{
+    display: none;
+}
