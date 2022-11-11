@@ -916,7 +916,7 @@ div.why div.right hr{
 @media(max-width: 40em){
 
     .hero {
-        margin: -20vh 0 -1vh 0;
+        margin: -10vh 0 -1vh 0;
         position: inherit;
     }
     
