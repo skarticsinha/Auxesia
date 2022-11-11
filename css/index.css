@@ -964,7 +964,7 @@ div.why div.right hr{
 }
 
 /* 320px -- small mobile*/
-@media(max-width: 22em) {
+@media(max-width: 640px) {
     .hero{
         margin: 0 0 -1vh 0;
     }
