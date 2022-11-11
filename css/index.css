@@ -913,7 +913,7 @@ div.why div.right hr{
 
 
 /* 512px -- mobile*/
-@media(max-width: 32em){
+@media(max-width: 40em){
 
     .hero {
         margin: -20vh 0 -1vh 0;
@@ -963,9 +963,9 @@ div.why div.right hr{
 
 }
 
-/* 320px -- small mobile*/
+/* 320px -- small mobile
 @media(max-width: 640px) {
     .hero{
         margin: 0 0 -1vh 0;
     }
-}
+} */
