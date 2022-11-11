@@ -1,0 +1,223 @@
+:root{
+    --ortho: #CAB3F1;
+    --general: #B8D4E9;
+    --dental: #AEDFBD;
+    --vet: #F1C6B3;
+}
+
+body {
+    background-color: #F2FBFE;
+}
+
+/* ====== Page Info ===== */
+
+section.page_info {
+    background: url(../static/contacts/doctor-holding-vaccine-icon-his-hand.png) center / cover;
+    height: 20vh;
+}
+
+section.page_info .overlay {
+    background: rgba(152, 224, 227, 0.7);
+    height: inherit;
+    display: flex;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.page_info .overlay .page_name h1 {
+    font-size: 5vh;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+section.page_info .overlay .breadcrumms {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.page_info .overlay .breadcrumms p {
+    padding-left: 1vw;
+}
+
+section.page_info .overlay .breadcrumms p.indicator {
+    color: #707070;
+}
+
+section.page_info .overlay .breadcrumms p a {
+    color: #161616;
+}
+
+/* 768px */
+@media(max-width: 48em) {
+
+    section.page_info .overlay {
+        padding: 0 2rem;
+    }
+}
+
+
+/* 512px */
+@media(max-width: 32em) {
+
+    section.page_info {
+        height: 10vh;
+    }
+
+    section.page_info .overlay {
+        padding: 0 1rem;
+    }
+
+    section.page_info .overlay .page_name h1 {
+        font-size: 4vh;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    section.page_info .overlay .breadcrumms p {
+        font-size: calc(100% - 20%);
+    }
+}
+
+/* ===== Page Info ===== */
+
+
+/* ===== Products Section ===== */
+
+.products{
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 2rem 0 4rem;
+}
+
+.count{
+    font-size: 1rem;
+    color: #5E5E5E;
+    margin-bottom: 1rem;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
+}
+
+.product{
+    background-color: white;
+    width: fit-content;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+/* === tag === */
+
+.product .tag{
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin-left: -1.5rem;
+}
+
+.product .tag p{
+    padding: 0.75rem 1.5rem;
+}
+
+.tag.ortho{
+    background-color: var(--ortho);
+}
+.tag.general{
+    background-color: var(--general);
+}
+.tag.dental{
+    background-color: var(--dental);
+}
+.tag.vet{
+    background-color: var(--vet);
+}
+
+/* === tag === */
+
+.product img{
+    position: relative;
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+.product:hover img{
+    transform: scale(1.1);
+
+}
+
+
+
+.product h3{
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.product p{
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 0 1rem;
+}
+
+.product button{
+    position: relative;
+    z-index: 1;
+    background-color: #C15690;
+    color: white;
+    font-size: 100%;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1.5vh 2.5vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product button:hover{
+    transform: scale(0.95);
+}
+
+
+/* ===== Products Section ===== */
+
+
+
+/* ===== Products Section Responsive ===== */
+
+/* 512px */
+@media(max-width: 32em) {
+
+
+    .products{
+        max-width: 1200px;
+        margin: 1rem auto;
+        padding: 2rem 0 0 1rem;
+    }
+
+    .product-container{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin: -2rem;
+    }
+
+    .product{
+        margin-top: -5rem;
+        transform: scale(0.8);
+    }
+    
+    .product:first-child{
+        margin-top: 0;
+    }
+
+
+}
+
+/* ===== Products Section Responsive ===== */
+
