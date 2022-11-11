@@ -916,14 +916,14 @@ div.why div.right hr{
 @media(max-width: 40em){
 
     .hero {
-        margin: -10vh 0 -1vh 0;
+        margin: 0 0 -1vh 0;
         position: inherit;
     }
     
     .hero .slider .swiper-slide .text{
         position: relative;
         z-index: 2;
-        top: 32vh;
+        top: 10vh;
         padding: 0 0 0 8vw;
     }
     
