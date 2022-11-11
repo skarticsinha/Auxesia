@@ -916,7 +916,7 @@ div.why div.right hr{
 @media(max-width: 32em){
 
     .hero {
-        margin: -30.5vh 0 -1vh 0;
+        margin: -20vh 0 -1vh 0;
         position: inherit;
     }
     
@@ -961,9 +961,11 @@ div.why div.right hr{
     
     
 
+}
 
-
-
-
-
+/* 320px -- small mobile*/
+@media(max-width: 20em) {
+    .hero{
+        margin: -10vh 0 -1vh 0;
+    }
 }
