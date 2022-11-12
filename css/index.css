@@ -144,7 +144,7 @@ button.primary{
 }
 
 .hero .slider .swiper-slide .text button.primary:hover{
-    font-size: 110%;
+    transform: scale(1.05);
 }
 
 .hero .swiper .swiper-button-prev, .swiper .swiper-button-next{
@@ -894,20 +894,23 @@ div.why div.right hr{
 /* Careers Section Start */
 
 .careers{
-    padding: 5% 15em 5% 15em;
+    padding: 4rem 10em 5% 10em;
     background-color: #F0FEFF;
+}
+
+.careers .job{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .careers .section_name{
     color: #279089;
     font-size: 20px;
-    margin-top: -10vh;
 }
 
 .careers button.primary{
-    margin-top: 10vh;
-    /* cursor: pointer; */
-    /* margin-top: 3%; */
+    margin-top: 5rem;
     background-color: #C15690;
     color: white;
     font-size: 100%;
@@ -916,24 +919,29 @@ div.why div.right hr{
     border-radius: 28px;
     padding: 1.5vh 2.5vw;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
-.careers .job td.data{
+.careers button.primary:hover{
+    transform: scale(1.05);
+}
+
+.careers .data{
     padding-left: 2%;
     /* padding-right: 5em; */
     width: 50%;
 }
 
-.careers .job td.data p.small_text{
+.careers p.small_text{
     font-size: 14px;
     font-weight: 200;
 }
 
-.careers .job td.data .section_heading{
+.careers .section_heading{
     font-size: 40px;
 }
 
-.careers .job td.img img{
+.careers .img img{
     /* width: 25vw; */
     height: 50vh;
     /* margin-left: 10vw; */
@@ -943,7 +951,7 @@ div.why div.right hr{
     position: relative;
     background: white;
     padding: 2em;
-    width: 60%;
+    width: 50%;
     margin-left: 15vw;
     margin-top: -16vh;
     z-index: 2;
@@ -958,6 +966,39 @@ div.why div.right hr{
 .careers .container .small_text{
     font-size: 14px;
 }
+
+/* ===== Resoinsive - Careers ===== */
+
+@media(max-width: 40em){
+
+    .careers{
+        padding: 2rem 1rem;
+    }
+
+    .careers .job{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .careers .data{
+        width: 80%;
+    }
+
+    .careers .container{
+        width: 100%;
+    }
+
+    .careers button.primary{
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        font-weight: 450;
+        border-radius: 15px;
+        padding: 0.5rem 0.6rem;
+    }
+
+}
+
+/* ===== Resoinsive - Careers ===== */
 
 /* Careers Section End */
 
