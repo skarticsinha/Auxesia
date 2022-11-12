@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- hero slider start -->
 
@@ -52,9 +53,10 @@
                         <li class="current"><a href="./index.html" data-hover="Home">Home</a></li>
                         <li><a href="./about.html" data-hover="About Us">About Us</a></li>
                         <li><a href="./products.html" data-hover="Products">Products</a>
-                        </li><li><a href="./distributors.html" data-hover="Distributors">Distributors</a></li>
+                        </li>
+                        <li><a href="./distributors.html" data-hover="Distributors">Distributors</a></li>
                         <li><a href="./contact-us.html" data-hover="Contact">Contact</a></li>
-                      </ul>
+                    </ul>
                 </nav>
                 <span class="social">
                     <ul>
@@ -585,72 +587,113 @@
             <h2 class="section_heading">
                 Continually Harnessing<br>Our Medical Expertise
             </h2>
-            <p class="small_text">Featured Products</p>
         </div>
-        <div class="cards">
-            <div class="card1">
-                <table>
-                    <tr>
-                        <td>
-                            <p class="name">
-                                Product Name
-                            </p>
-                        </td>
-                        <td rowspan="2">
-                            <img src="./static/index/products/19-460APRDBP7100Right800x800.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
-                                veritatis sapiente iure perferendis?</p>
-                        </td>
-                    </tr>
-                </table>
+        <div class="featured">
+            <div>
+                <p class="medium_text">
+                    Featured Products
+                </p>
+                <p class="small_text"><a href="">View All</a></p>
             </div>
-            <div class="card2">
-                <table>
-                    <tr>
-                        <td>
-                            <p class="name">
-                                Product Name
-                            </p>
-                        </td>
-                        <td rowspan="2">
-                            <img src="./static/index/products/974-OXY 300.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
-                                veritatis sapiente iure perferendis?</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="card3">
-                <table>
-                    <tr>
-                        <td>
-                            <p class="name">
-                                Product Name
-                            </p>
-                        </td>
-                        <td rowspan="2">
-                            <img src="./static/index/products/IR200.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo sit,
-                                veritatis sapiente iure perferendis?</p>
-                        </td>
-                    </tr>
-                </table>
+            <div class="cards">
+                <div class="card">
+                    <div>
+                        <p class="product_name">
+                            Product Name
+                        </p>
+                        <p class="details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./static/about/product1.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p class="product_name">
+                            Product Name
+                        </p>
+                        <p class="details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./static/about/product1.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p class="product_name">
+                            Product Name
+                        </p>
+                        <p class="details">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis libero accusantium!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./static/about/product1.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="banner">
             <img src="./static/index/products/Image 4.png" alt="">
+        </div>
+        <div class="featured">
+            <div>
+                <p class="medium_text">
+                    Gallery
+                </p>
+                <p class="small_text"><a href="">View Gallery</a></p>
+            </div>
+        </div>
+        <div class="img-gallery">
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product1.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product2.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product3.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product4.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product5.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="./static/index/products/product6.png">
+                    <div>
+                        <h4>Peoduct Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -883,6 +926,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Flickity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js"></script>
