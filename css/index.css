@@ -514,6 +514,10 @@ div.why div.right hr{
     border-color: white;
 } */
 
+.why .right .why_data{
+    display: flex;
+}
+
 .why .right .why_data .icon{
     width: min-content;
 }
@@ -597,10 +601,6 @@ div.why div.right hr{
     row-gap: 1.25rem;
 }
 
-.why .right div.sec1 .why_data .icon{
-    width: 100px;
-}
-
 .why .right div.sec1 .why_data div{
     height: 80px;
 }
@@ -676,12 +676,17 @@ div.why div.right hr{
 
 @media(max-width: 40em){
 
+    .why .right{
+        padding-right: 1rem;
+    }
+
     .why .right div.sec1{
         flex-direction: column;
     }
 
     .why .right div.sec1 div.ri{
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .why .right div.sec1 img.side_img{
@@ -692,6 +697,25 @@ div.why div.right hr{
     .why .right div.sec1 .container{
         width: 100%;
         margin-top: -10vh;
+    }
+
+    .why .right div.sec1 .why_data{
+        padding-left: 4.5rem;
+        justify-content: end;
+        row-gap: 5rem;
+    }
+
+    .why .right div.sec1 .icon img{
+        height: 50px;
+    }
+
+    .why .right .space{
+        margin-top: 8rem;
+    }
+
+    .why .right .sec2 .why_data{
+        flex-direction: column;
+        row-gap: 2rem;
     }
 
 }
