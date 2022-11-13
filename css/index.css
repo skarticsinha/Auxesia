@@ -435,6 +435,20 @@ p.small_text{
     visibility: hidden;
 }
 
+
+/* ===== Resoinsive - Why_back ===== */
+
+@media(max-width: 40em){
+
+    .why_back .left{
+        padding-left: 0.8rem;
+        transform: scale(0.9);
+    }
+
+}
+
+/* ===== Resoinsive - Why_back ===== */
+
 /*  */
 
 .why{
@@ -500,7 +514,7 @@ div.why div.right hr{
     border-color: white;
 } */
 
-.why .ritght table.why_data  td.icon{
+.why .right .why_data .icon{
     width: min-content;
 }
 
@@ -576,70 +590,113 @@ div.why div.right hr{
     padding: 0;
 }
 
-.why .right div.sec1 table.why_data{
+.why .right div.sec1 .why_data{
     margin-left: -80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
 }
 
-.why .right div.sec1 table.why_data tr td.icon{
+.why .right div.sec1 .why_data .icon{
     width: 100px;
 }
 
-.why .right div.sec1 table.why_data tr{
+.why .right div.sec1 .why_data div{
     height: 80px;
 }
 
-.why .right div.sec1 table.why_data .content{
+.why .right div.sec1 .why_data .content{
     height: 80px;
     margin-bottom: 10px;
+    display: flex;
+    gap: 1rem;
 }
 
-.why .right div.sec1 table.why_data .content .data .medium_text{
+.why .right div.sec1 .why_data .content .data .medium_text{
     font-size: 22px;
     font-weight: 400;
     padding-bottom: 15px;
 }
 
-.why .right div.sec1 table.why_data .content .data .small_text{
+.why .right div.sec1 .why_data .content .data .small_text{
     font-size: 16px;
     font-weight: 300;
     padding-bottom: 0;
 }
 
-.why .right .sec2 div{
+.why .right .sec2 > div:first-child{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.why .right .sec2 .why_data{
     display: flex;
     justify-content: space-between;
-    padding-right: 8vw;
 }
 
 /* .why .right .sec2 div.text p.big_text{
     font-size: 50px;
     font-weight: 400;
     padding: 0;
-}
+}*/
 
 .why .right .sec2 div.content{
-    margin-bottom: 10px;
-} */
+    display: flex;
+}
+
+.why .right .sec2 .content .data{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
 
 .why .right .sec2 img{
     padding-right: 20px;
 }
 
-.why .right .sec2 table .medium_text{
+.why .right .sec2 .medium_text{
     font-size: 50px;
     font-weight: 600;
     color: #1FA89F;
-    margin-top: -20px;
+    margin-top: -10px;
     letter-spacing: 1px;
     /* padding-bottom: 5px; */
 }
 
-.why .right .sec2 table .small_text{
+.why .right .sec2 .small_text{
     font-size: 16px;
     color: white;
     padding-bottom: 0;
 }
 
+
+
+/* ===== Resoinsive - Why ===== */
+
+@media(max-width: 40em){
+
+    .why .right div.sec1{
+        flex-direction: column;
+    }
+
+    .why .right div.sec1 div.ri{
+        width: 100%;
+    }
+
+    .why .right div.sec1 img.side_img{
+        width: 90%;
+        height: 100%;
+    }
+
+    .why .right div.sec1 .container{
+        width: 100%;
+        margin-top: -10vh;
+    }
+
+}
+
+/* ===== Resoinsive - Why ===== */
 
 /* Why Section End */
 
