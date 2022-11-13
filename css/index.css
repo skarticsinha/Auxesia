@@ -1006,8 +1006,6 @@ div.why div.right hr{
 
 .contact{
 
-    display: flex;
-    justify-content: start;
     background: url(../static/index/Contact/pharmacist-helping-woman-medicine-choice.png) center / cover;
     color: white;
     width: 100%;
@@ -1017,9 +1015,10 @@ div.why div.right hr{
 .contact .overlay{
     background: rgba(78, 24, 77, 0.4);
     padding: 5% 15em 5% 15em;
+    display: flex;
 }
 
-.contact .table table .feild{
+.contact .feild{
     width: 100%;
     margin-top: 10px;
     padding-left: 2.5%;
@@ -1030,7 +1029,7 @@ div.why div.right hr{
     border-radius: 2.5px;
 }
 
-.contact .table table .feild2{
+.contact .feild2{
     width: 49%;
     margin-top: 10px;
     padding-left: 2.5%;
@@ -1042,7 +1041,7 @@ div.why div.right hr{
     border-radius: 2.5px;
 }
 
-.contact .table table .feild3{
+.contact .feild3{
     width: 100%;
     margin-top: 10px;
     padding-left: 2.5%;
@@ -1055,24 +1054,23 @@ div.why div.right hr{
     border-radius: 2.5px;
 }
 
-/* .contact .form{
-    width: 50%;
-    margin: 0;
+.contact .form{
+    min-width: 10rem;
 }
-.contact .info{
-    width: 50%;
-    margin-left: 50%;
-    transform: translatey(-100%);
-} */
 
-.contact .overlay .table .big_text{
+.contact .form div{
+    display: flex;
+    width: 100%
+}
+
+.contact .overlay .big_text{
     padding: 0;
     font-weight: 500;
     font-size: 30px;
 }
 
-.contact .overlay .table .pad .big_text,
-.contact .overlay .table .pad .small_text{
+.contact .overlay .info .big_text,
+.contact .overlay .info .small_text{
     padding-left: 50px;
 }
 
@@ -1086,6 +1084,43 @@ div.why div.right hr{
     padding: 1.7vh 3vw;
     cursor: pointer;
 }
+
+.contact .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ===== Resoinsive - Contact ===== */
+
+@media(max-width: 40em){
+
+    .contact .overlay{
+        background: rgba(78, 24, 77, 0.4);
+        padding: 5rem 1rem 5rem 1rem;
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+
+    .contact .info{
+        justify-content: start;
+    }
+
+    .contact .overlay .info .big_text, .contact .overlay .info .small_text{
+        padding-left: 0;
+    }
+
+    .form_btn{
+        font-size: 1rem;
+        font-weight: 450;
+        border-radius: 25px;
+        padding: 0.75rem 1.5rem;
+    }
+
+}
+
+/* ===== Resoinsive - Contact ===== */
 
 /* Contact Section End */
 
