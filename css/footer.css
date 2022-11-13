@@ -62,4 +62,13 @@ footer .lower .p {
     }
 }
 
+
+@media(max-width: 40em){
+
+    footer .upper {
+        padding: 5% 1.5rem 0 1.5rem;
+    }
+
+}
+
 /* Footer End */
