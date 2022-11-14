@@ -92,3 +92,29 @@ section.data .avalible{
     font-weight: 400;
 }
 
+/* 512px */
+@media(max-width: 32em) {
+
+    section.page_info {
+        height: 10vh;
+    }
+
+    section.page_info .overlay {
+        padding: 0 1rem;
+    }
+
+    section.page_info .overlay .page_name h1 {
+        font-size: 4vh;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    section.page_info .overlay .breadcrumms p {
+        font-size: calc(100% - 20%);
+    }
+
+    section.data{
+        padding: 2em 1rem 10em 1rem;
+    } 
+
+}

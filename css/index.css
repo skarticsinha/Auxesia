@@ -176,11 +176,11 @@ button.primary{
 
 
 
-/* 512px -- mobile*/
+/* 640px -- mobile*/
 @media(max-width: 40em){
 
     .hero {
-        margin: -10vh 0 -1vh 0;
+        margin: -15vh 0 -1vh 0;
         position: inherit;
     }
     
@@ -844,13 +844,25 @@ div.why div.right hr{
 
 .hope{
     background: url(../static/index/Hope/daily-pills-health-treatment-with-copy-space.png) center / cover;
-    height: 45vh;
-    padding: 1% 10em 0 10em;
+    height: fit-content;
+    padding: 1% 10em 1% 10em;
     display: flex;
     justify-content: space-between;
     justify-items: right;
     color: white;
 }
+
+/* ===== Resoinsive - hope ===== */
+
+@media(max-width: 40em){
+
+    .hope{
+        padding-left: 12rem;
+    }
+
+}
+
+/* ===== Resoinsive - hope ===== */
 
 .hope .space{
     width: 90vw;

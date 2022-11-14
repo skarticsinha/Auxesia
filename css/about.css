@@ -261,3 +261,30 @@ p.small_text{
 .flickity-page-dots{
     display: none;
 }
+
+/* ===== Resoinsive - About__us ===== */
+
+@media(max-width: 40em){
+
+    .intro{
+        flex-direction: column;
+    }
+
+    .intro img{
+        width: 95vw;
+    }
+
+    .genral, .ortho, .dental, .vet{
+        padding: 5% 1rem 5% 1rem;
+    }
+
+    .img-gallery .carousel-cell{
+        width: 60%;
+    }
+
+    .img-gallery .carousel-cell div{
+        word-wrap: normal;
+    }
+}
+
+/* ===== Resoinsive - About__us ===== */
