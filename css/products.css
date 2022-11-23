@@ -88,6 +88,8 @@ section.page_info .overlay .breadcrumms p a {
     max-width: 1200px;
     margin: 1rem auto;
     padding: 2rem 0 4rem;
+    position: relative;
+    z-index: 0;
 }
 
 .count{
@@ -221,3 +223,231 @@ section.page_info .overlay .breadcrumms p a {
 
 /* ===== Products Section Responsive ===== */
 
+/* ===== Products Popup Section ===== */
+
+.product-info{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card{
+    display: none;
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.product-card.active{
+    display: inline-block;
+}
+
+.product-card .p-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-icon{
+    transform: scale(2);
+    color: #279089;
+    transition: all 0.3s;
+    margin-right: -1rem;
+    margin-top: -0.5rem;
+}
+
+.close-icon:hover{
+    transform: scale(2);
+    color: #279089;
+    transform: rotate(90deg);
+}
+
+.product-name{
+    color: #832574;
+    font-size: 1.4rem;
+}
+
+.product-card .wrapper{
+    display: flex;
+}
+
+.product-card .data{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.product-card .data .images{
+    display: flex; 
+    gap: 1rem;
+}
+
+.product-card .images .choices{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-self: center;
+}
+
+.product-card .images .choices .choice{
+    border: solid #EFEFEF;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+}
+
+.product-card .images .choices .active{
+    border: solid #279089;
+}
+
+.product-card .images .choices img{
+    width: 5rem;
+}
+
+.product-card .images .main-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-img .choice{
+    display: none;
+}
+
+.main-img .choice.active{
+    display: block;
+}
+
+.product-card .text{
+    font-size: 1rem;
+    color: #5E5E5E;
+}
+
+.form{
+    background: #F2F4F5;
+    min-width: 10rem;
+    width: 50%;
+    border-radius: 0.25rem;
+}
+
+.form .contact{
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    padding: 1rem;
+}
+
+.form .contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feild{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    height: 40px;
+    font-weight: 300;
+    background-color: white;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.feild2{
+    width: 49.5%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    padding-right: 3%;
+    height: 40px;
+    font-weight: 300;
+    background-color: white;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.feild3{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+    /* height: 40px; */
+    font-weight: 300;
+    background-color: white;
+    border-style: none;
+    border-radius: 2.5px;
+}
+
+.form_btn{
+    margin-top: 3%;
+    background-color: #C15690;
+    color: white;
+    font-size: 100%;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1.5vh 2.5vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* 640px -- mobile*/
+@media(max-width: 40em){
+
+    .product-card{
+        width: 95%;
+        background: white;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    }
+
+    .product-name{
+        font-size: 1.2rem;
+    }
+
+    .product-card .wrapper{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .product-card .data{
+        width: 100%;
+        row-gap: 1rem;
+    }
+
+    .product-card .data .images{
+        flex-direction: column-reverse;
+        row-gap: 0.2rem;
+    }
+
+    .product-card .images .choices{
+        flex-direction: row;
+        gap: 0.5rem;
+        align-self: center;
+    }
+    
+    .form{
+        width: 100%;
+    }
+
+    .feild2{
+        width: 100%;
+    }
+
+    .form_btn{
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 4px;
+        padding: 0.6rem 1.5rem;
+    }
+
+}
+
+/* ===== Products Popup Section ===== */
