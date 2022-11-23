@@ -401,11 +401,14 @@ section.page_info .overlay .breadcrumms p a {
 @media(max-width: 40em){
 
     .product-card{
+        height: 90vh;
         width: 95%;
         background: white;
         border-radius: 5px;
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        overflow-y: scroll;
     }
 
     .product-name{
